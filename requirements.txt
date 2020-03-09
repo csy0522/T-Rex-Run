@@ -1,6 +1,6 @@
 numpy==1.18.*
 matplotlib==3.*
-tensorflow-gpu==1.15
+tensorflow-gpu==1.15.2
 keras
 threading
 opencv-contrib-python
