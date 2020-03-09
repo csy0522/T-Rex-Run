@@ -45,7 +45,7 @@ Give an example
 
 ## Deployment
 
-Reinforcement Learning algorithms can be applied to any software agents in an environment. One of the best ways for beginners to approach Reinforcement Learning is learning <<gym environment>> and <RL algorithms>>. Click the following links to find out more about Reinforcement Learning.
+Reinforcement Learning algorithms can be applied to any software agents in an environment. One of the best ways for beginners to approach Reinforcement Learning is learning Gym Environment and RL Algorithms. Click the following links to find out more about Reinforcement Learning.
 
 * [Reinforcement Learning Basic](https://www.guru99.com/reinforcement-learning-tutorial.html) - Reinforcement Learning: What is, Algorithms, Applications, Example
 * [OpenAI - Gym Environment](https://gym.openai.com/) - A Toolkit for Developing and Comparing Reinforcement Learning Algorithms
