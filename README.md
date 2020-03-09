@@ -48,7 +48,7 @@ Give an example
 Reinforcement Learning algorithms can be applied to any software agents in an environment. One of the best ways for beginners to approach Reinforcement Learning is learning <<gym environment>> and <RL algorithms>>. Click the following links to find out more about Reinforcement Learning.
 
 * [Reinforcement Learning Basic](https://www.guru99.com/reinforcement-learning-tutorial.html) - Reinforcement Learning: What is, Algorithms, Applications, Example
-* [OpenAI - gym environment](https://gym.openai.com/) - A Toolkit for Developing and Comparing Reinforcement Learning Algorithms
+* [OpenAI - Gym Environment](https://gym.openai.com/) - A Toolkit for Developing and Comparing Reinforcement Learning Algorithms
 * [Reinforcement Learning Algorithms](https://gym.openai.com/) - list of algorithms of Reinforcement Learning
 
 ## Built With
@@ -56,8 +56,8 @@ Reinforcement Learning algorithms can be applied to any software agents in an en
 * [Python](https://www.python.org/) - The Programming Language
 * [Tensorflow](https://www.tensorflow.org/) - The End-to-end Open Source Machine Learning Platform
 * [keras](https://keras.io/) - The Python Deep Learning Library
-* [gym](https://gym.openai.com/) - A Toolkit for Developing and Comparing Reinforcement Learning Algorithms
-* [gym_chrome_dino](https://pypi.org/project/gym-chrome-dino/) - An OpenAI Gym Environment for Chrome Dino / T-Rex Runner Game
+* [Gym](https://gym.openai.com/) - A Toolkit for Developing and Comparing Reinforcement Learning Algorithms
+* [Gym_Chrome_Dino](https://pypi.org/project/gym-chrome-dino/) - An OpenAI Gym Environment for Chrome Dino / T-Rex Runner Game
 
 ## Authors
 
@@ -69,6 +69,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-* **Elvis Yu-Jing Lin** [elvisyjlin](https://pypi.org/user/elvisyjlin/)
+* **Elvis Yu-Jing Lin** - [elvisyjlin](https://pypi.org/user/elvisyjlin/)
 
 
