@@ -1,0 +1,10 @@
+numpy==1.18.*
+matplotlib==3.*
+tensorflow-gpu==1.15
+keras
+threading
+opencv-contrib-python
+gym
+gym_chrome_dino
+Pillow
+selenium
