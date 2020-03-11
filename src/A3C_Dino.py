@@ -33,10 +33,10 @@ TOTAL_REWARDS = deque()
 
 class A3C:
     
-    def __init__(self,input_shape,output_shape,gamma,threads,environment):
+    def __init__(self,input_shape,output_shape,threads,environment):
         self.input_shape_ = input_shape
         self.output_shape_ = output_shape
-        self.gamma_ = gamma
+        self.gamma_ = 0.995
         self.threads_ = threads
         self.environment_ = environment
         
@@ -147,17 +147,20 @@ class Dino(threading.Thread):
         
         
     def run(self):
+        self.__train__()
+
+        
+        
+    def __train__(self):
         global EPISODE
         env = gym.make(self.environment_)
         while EPISODE != MAX_EPISODE:
             done = False
             total_reward = 0
-            # state = self.environment_.reset()
             state = env.reset()
             state = self.__process_initial_state__(state)
             while not done:
                 action = self.__action__(state)
-                # next_state,reward,done,info = self.environment_.step(action)
                 next_state,reward,done,info = env.step(action)
                 self.__remember__(state,action,reward)
                 total_reward += reward
@@ -171,7 +174,8 @@ class Dino(threading.Thread):
                     break
         self.__plot_total_rewards__()
         self.__save_weights__("{}".format(MAX_EPISODE))
-        
+    
+    
     
     
     def __process_initial_state__(self, state):
@@ -254,19 +258,4 @@ class Dino(threading.Thread):
 
 
 
-
-
-if __name__ == "__main__":
-    
-    environment = gym.make("ChromeDinoNoBrowser-v0")
-    
-    input_shape = (80,80,4)
-    output_shape = environment.action_space.n
-    gamma = 1
-    threads = 8
-    environment.close()
-    
-    a3c = A3C(input_shape, output_shape, gamma, threads, environment)
-    a3c.__train__()
-    
     

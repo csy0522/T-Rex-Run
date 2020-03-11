@@ -18,11 +18,10 @@ if __name__ == "__main__":
     env = gym.make(environment)
     input_shape = (50,50,4)
     output_shape = env.action_space.n
-    gamma = 1
     threads = 8
     
     
     env.close()
     
-    a3c = A3C(input_shape,output_shape,gamma,threads,environment)
+    a3c = A3C(input_shape,output_shape,threads,environment)
     a3c.__train__()
