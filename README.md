@@ -23,11 +23,22 @@ pip install -r requirements.txt
 
 ## Running the tests
 
-The description of each function is located on top of them. Please read them before running for clarity.
+- The description of each function is located on top of them. Please read them before running to understand the overall structure of the project. <br/>
+- This project automates an agent (the Dino) in its environment (Desert, I assume, with cactuses) using Asynchronous Advantage Actor-Critic (A3C) Algorithm.<br/>
+- Before testing, train the agent (Chrome dino) by running **train.py**. The training time depends on the number of threads and episodes. When done training, two .h5 type files, which are the trained actor and critic, will appear in the current directory.<br/>
+- To run the test, go to terminal, and type:
+```
+python test.py <actor h5 file name> <critic h5 file name>
+```
+- The following is the trained agent/Dino jumping over cactuses:
 
-To be continued...
 
 
+![Actual V.S Prediction](/data/Actual_vs_Prediction_Graph.png)
+
+- The blue line is the actual stock price, and the red line is the prediction. <br/>
+- For more detail, please read the descriptions on top of each function, and run **main.py**. Make sure to run it from an ide that's able to show graphs. The output will show more deails, including accuracy, loss, and more graphs.<br/>
+- I also added a **ipynb** file for the main functionin in the **src** directory if you want to run it using [Jupyter Notebook](https://jupyter.org/)
 
 
 ## Deployment
