@@ -25,27 +25,14 @@ pip install -r requirements.txt
 
 The description of each function is located on top of them. Please read them before running for clarity.
 
-To run the test, go to main.py, and run (Press F5 for most of the IDEs)
+To be continued...
 
-### Break down into end to end tests ----------------- To Be Continued...
 
-Explain what these tests test and why
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
-Reinforcement Learning algorithms can be applied to any software agents in an environment. One of the best ways for beginners to approach Reinforcement Learning is learning <<gym environment>> and <RL algorithms>>. Click the following links to find out more about Reinforcement Learning.
+Reinforcement Learning algorithms can be applied to any software agents in an environment. One of the best ways for beginners to approach Reinforcement Learning is learning Gym Environment and RL Algorithms. Click the following links to find out more about Reinforcement Learning.
 
 * [Reinforcement Learning Basic](https://www.guru99.com/reinforcement-learning-tutorial.html) - Reinforcement Learning: What is, Algorithms, Applications, Example
 * [OpenAI - Gym Environment](https://gym.openai.com/) - A Toolkit for Developing and Comparing Reinforcement Learning Algorithms
@@ -59,7 +46,7 @@ Reinforcement Learning algorithms can be applied to any software agents in an en
 * [Gym](https://gym.openai.com/) - A Toolkit for Developing and Comparing Reinforcement Learning Algorithms
 * [Gym_Chrome_Dino](https://pypi.org/project/gym-chrome-dino/) - An OpenAI Gym Environment for Chrome Dino / T-Rex Runner Game
 
-## Authors
+## Author
 
 * **CSY** - [csy0522](https://github.com/csy0522)
 
