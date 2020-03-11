@@ -34,7 +34,7 @@ python test.py <actor h5 file name> <critic h5 file name>
 
 
 
-![Actual V.S Prediction](/data/Actual_vs_Prediction_Graph.png)
+![Dino Run~!](/data/Dino_Run.png)
 
 - The blue line is the actual stock price, and the red line is the prediction. <br/>
 - For more detail, please read the descriptions on top of each function, and run **main.py**. Make sure to run it from an ide that's able to show graphs. The output will show more deails, including accuracy, loss, and more graphs.<br/>
