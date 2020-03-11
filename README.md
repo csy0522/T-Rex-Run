@@ -34,7 +34,7 @@ python test.py <actor h5 file name> <critic h5 file name>
 
 ![Dino Run~!](/data/Dino_Run.gif)
 
-- Due to the size issue, I've only included 15 seconds to this gif. <br/>
+- Due to the size issue, I've only included 15 seconds to this gif. The Dino eventually gets 1,936 points at the end.<br/>
 - Some of you may have already noticed that there is a **bug** in this automated agent - the Dino still jumps when there is no cactus in front of it. If you remember how the game is started, this is due to the 5-8 seconds blank state when starting the game. While training, the agent's reward increases even though it jumps in an empty space, and thus it is trained to jump in an empty space as well ;;;<br/>
 - I also added a **ipynb** file in the **src** directory if you want to run it using [Jupyter Notebook](https://jupyter.org/)
 
