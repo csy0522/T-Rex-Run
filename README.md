@@ -32,14 +32,11 @@ python test.py <actor h5 file name> <critic h5 file name>
 ```
 - The following is the trained agent/Dino jumping over cactuses:
 
-
-
 ![Dino Run~!](/data/Dino_Run.gif)
 
-- The blue line is the actual stock price, and the red line is the prediction. <br/>
-- For more detail, please read the descriptions on top of each function, and run **main.py**. Make sure to run it from an ide that's able to show graphs. The output will show more deails, including accuracy, loss, and more graphs.<br/>
-- I also added a **ipynb** file for the main functionin in the **src** directory if you want to run it using [Jupyter Notebook](https://jupyter.org/)
-
+- Due to the size issue, I've only included 15 seconds to this gif. <br/>
+- Some of you may have already noticed that there is a bug in this automated agent - the Dino still jumps when there is no cactus in front of it. If you remember how the game is started, this is due to the 5-8 seconds blank state when starting the game. While training, the agent's reward increases even though it jumps in an empty space, and thus it is trained to jump in an empty space as well ;;;<br/>
+- I also added a **ipynb** file in the **src** directory if you want to run it using [Jupyter Notebook](https://jupyter.org/)
 
 ## Deployment
 
