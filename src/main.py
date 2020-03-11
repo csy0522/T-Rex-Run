@@ -7,20 +7,19 @@ Created on Fri Feb  7 23:21:37 2020
 
 
 
-from A3C import A3C
+from A3C_Dino import A3C
 
 import gym
 import gym_chrome_dino
 
 
 if __name__ == "__main__":
-    env = gym.make('ChromeDinoNoBrowser-v0')
-    
+    environment = 'ChromeDinoNoBrowser-v0'
+    env = gym.make(environment)
     input_shape = (50,50,4)
     output_shape = env.action_space.n
     gamma = 1
     threads = 8
-    environment = env
     
     
     env.close()

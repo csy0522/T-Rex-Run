@@ -111,7 +111,7 @@ class A3C:
     
     
     
-    def train(self):
+    def __train__(self):
         dinos = [Dino(self.input_shape_, self.output_shape_, self.environment_, self.actor_, self.critic_,
                      self.__update_actor__(), self.__update_critic__(), self.gamma_, self.sess_) 
                  for i in range(self.threads_)]
@@ -148,14 +148,17 @@ class Dino(threading.Thread):
         
     def run(self):
         global EPISODE
+        env = gym.make(self.environment_)
         while EPISODE != MAX_EPISODE:
             done = False
             total_reward = 0
-            state = self.environment_.reset()
+            # state = self.environment_.reset()
+            state = env.reset()
             state = self.__process_initial_state__(state)
             while not done:
                 action = self.__action__(state)
-                next_state,reward,done,info = self.environment_.step(action)
+                # next_state,reward,done,info = self.environment_.step(action)
+                next_state,reward,done,info = env.step(action)
                 self.__remember__(state,action,reward)
                 total_reward += reward
                 next_state = self.__process_new_state__(state,next_state)
@@ -264,51 +267,6 @@ if __name__ == "__main__":
     environment.close()
     
     a3c = A3C(input_shape, output_shape, gamma, threads, environment)
-    a3c.train()
-    
-    
-    # dino = Dino(a3c.input_shape_, a3c.output_shape_, a3c.environment_,
-    #             a3c.actor_, a3c.critic_,a3c.__update_actor__(),
-    #             a3c.__update_critic__(), a3c.gamma_, a3c.sess_, max_episode, total_rewards)
-    
-    # dino.run()
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    a3c.__train__()
     
     
